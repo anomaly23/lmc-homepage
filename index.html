@@ -166,11 +166,12 @@
   }
 
   /* ===== HERO ===== */
-  .hero { background: var(--ink); text-align: left; }
+  .hero { background: var(--ink); text-align: center; }
   .hero .wordmark {
     width: 400px;
     max-width: 70vw;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
+    display: block;
   }
   .hero-tagline {
     font-size: clamp(1.4rem, 3vw, 2.2rem);
@@ -178,6 +179,7 @@
     line-height: 1.25;
     max-width: 760px;
     letter-spacing: -0.3px;
+    margin: 0 auto;
   }
   .hero-subtitle {
     margin-top: 24px;
