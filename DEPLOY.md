@@ -2,8 +2,8 @@
 
 - **ЧТО:** lmcflow.com — временный лендинг. Одна страница: hero, about, services
   (Brand & Web + Social Media), contact, footer.
-- **ОТКУДА:** repo `anomaly23/lmc-homepage`, ветка **`main`**; локальный чекаут `lmc/homepage/`
-  (остаётся в корне lmc — записанное отклонение «lmc = крыша»).
+- **ОТКУДА:** repo `lmcflow/lmc-website`, ветка **`main`**; локальный чекаут `~/LMC/work/brands/lmc/website/`
+  (ячейка сайта бренда; старый чекаут `lmc/homepage/` удержан в холдинге `_migrated`).
 - **КАК:** GitHub Pages — push в `main` публикуется автоматически; домен привязан
   через `CNAME` (lmcflow.com) в корне репо. Отдельного CI нет.
 
@@ -26,7 +26,7 @@
 | A | `lmcflow.com` | `185.199.109.153` |
 | A | `lmcflow.com` | `185.199.110.153` |
 | A | `lmcflow.com` | `185.199.111.153` |
-| CNAME | `www` | `anomaly23.github.io` |
+| CNAME | `www` | `lmcflow.github.io` (до смены записи DNS работает и `anomaly23.github.io` — GitHub перенаправляет перенесённый репо) |
 
 **Записи почты и тенанта — НЕ ТРОГАТЬ:** `MX` на `lmcflow-com.mail.protection.outlook.com`;
 `TXT` SPF (`v=spf1 include:spf.protection.outlook.com -all`); `TXT` `MS=…` (верификация
@@ -61,7 +61,7 @@ Let's Encrypt выдаётся GitHub'ом автоматически, но **н
 
 ## Аккаунт GitHub
 
-Репо принадлежит `anomaly23`. Активный аккаунт `gh` — общее состояние машины и
+Репо принадлежит организации `lmcflow`; push идёт от `anomaly23` (участник организации). Активный аккаунт `gh` — общее состояние машины и
 перескакивает на `deviflw` из параллельных сессий; push отвалится с 403 или
 «Repository not found». Лечится `gh auth switch --user anomaly23` и повтором. Это
 принятое положение дел, а не поломка.
